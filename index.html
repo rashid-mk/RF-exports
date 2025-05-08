@@ -215,7 +215,7 @@
     </section>
 
     <!-- Contact Section -->
-    <section class="section contact" id="contact">
+   <section class="section contact" id="contact">
     <div class="container">
         <h2 class="section-title">Get In Touch</h2>
         <div class="contact-content">
@@ -254,7 +254,12 @@
                 </div>
             </div>
             <div class="contact-form">
-                <form action="https://formspree.io/f/mjkwrzaq" method="POST">
+                <form action="https://formsubmit.co/edgarddufort@gmail.com" method="POST">
+                    <!-- Redirect to Thank You Page -->
+                    <input type="hidden" name="_next" value="https://rfexports.com/thank-you.html">
+                    <!-- Disable CAPTCHA (optional) -->
+                    <input type="hidden" name="_captcha" value="false">
+
                     <div class="form-group">
                         <input type="text" name="name" class="form-control" placeholder="Your Name" required>
                     </div>
@@ -267,14 +272,16 @@
                     <div class="form-group">
                         <textarea name="message" class="form-control" placeholder="Your Message" required></textarea>
                     </div>
-                    <!-- Optional redirect after submission -->
-                    <input type="hidden" name="_redirect" value="https://rfexports.com/thank-you.html">
+                    <!-- Anti-spam field (honeypot) -->
+                    <input type="text" name="_honey" style="display:none">
+                    
                     <button type="submit" class="btn">Send Message</button>
                 </form>
             </div>
         </div>
     </div>
 </section>
+
 
 
     <!-- Footer -->
